@@ -32,6 +32,7 @@ for(i in 1:100) {
   # Create test and training data
   # Hint: http://stackoverflow.com/questions/17200114/how-to-split-data-into-training-testing-sets-using-sample-function-in-r-program
   # 1. Create training and testing datasets by sampling 75% of your data from your `homes` dataframe.
+<<<<<<< HEAD
   train.indicies <- sample(seq_len(nrow(homes)), size = sample.size)
   training.data <- homes[train.indicies,]
   test.data <- homes[-train.indicies,]
@@ -39,6 +40,12 @@ for(i in 1:100) {
 
   # 2. Pass your **training data** to the `rpart` function to run a simple classification operation
 basic.fit <- rpart(in_sf ~ ., data = training.data, method="class")
+=======
+  
+  
+  # 2. Pass your **training data** to the `rpart` function to run a simple classification operation
+  
+>>>>>>> 20e14e563f3318b1aff6f7118d112d3dcd2ac0ce
   
   # 3. Pass your results to the `AssessFit` function to assess the fit
   
